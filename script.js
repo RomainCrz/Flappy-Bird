@@ -67,7 +67,7 @@ function loop() {
 }
 
 window.addEventListener("click", () => (gamePlaying = true));
-window.onclick = () => (flight = jump);
+window.addEventListener("click", () => (flight = jump));
 
 function birdMove(index) {
   if (index % 9 <= 3) {
