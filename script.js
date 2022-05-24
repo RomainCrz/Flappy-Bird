@@ -67,7 +67,7 @@ function loop() {
 }
 
 window.addEventListener("click", () => (gamePlaying = true));
-window.addEventListener("click", () => (flight = jump));
+window.addEventListener("click touchstart", () => (flight = jump));
 
 function birdMove(index) {
   if (index % 9 <= 3) {
